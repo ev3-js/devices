@@ -1,7 +1,7 @@
 {
   "name": "ev3-js-devices",
   "repository": "git://github.com/ev3-js/devices.git",
-  "description": "Motor device for ev3",
+  "description": "Collection EV3 devices.",
   "version": "0.3.0",
   "license": "MIT",
   "main": "index.js",
