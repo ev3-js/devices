@@ -10,6 +10,6 @@
   },
   "dependencies": {
     "@micro-js/map-obj": "^1.1.1",
-    "ev3-js-motor": "^0.3.0"
+    "ev3-js-motor": "^0.4.0"
   }
 }
