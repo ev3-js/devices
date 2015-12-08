@@ -1,0 +1,22 @@
+{
+  "name": "ev3-js-devices",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ev3-js/devices.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ev3-js/devices/issues"
+  },
+  "homepage": "https://github.com/ev3-js/devices#readme",
+  "dependencies": {
+    "ev3-js-motor": "^0.1.0"
+  }
+}
