@@ -47,8 +47,8 @@ function createMotor (basename) {
 function portToPath () {
   var motorPath = '/sys/class/tacho-motor/'
   return fs.readdirSync(motorPath).reduce(function (obj, file) {
-    var portName = fs.readFileSync(motorPath + file + '/port_name', 'utf-8')
-    obj[portName] = file
+    var portName = fs.readFileSync(motorPath + file + '/port_name', 'utf-8').trim()
+    obj[portName] = file.trim
     return obj
   }, {})
 }
