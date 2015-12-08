@@ -64,9 +64,9 @@ function map (fn, obj) {
   var result = {}
   var self = this
 
-  obj.forEach(function (val, key) {
-    result[key] = fn.call(self, val, key)
-  })
+  for (var key in obj) {
+    result[key] = fn.call(self, obj[key], key)
+  }
 
   return result
 }
