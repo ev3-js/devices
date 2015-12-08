@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ev3-js/devices#readme",
   "dependencies": {
+    "@micro-js/map-obj": "^1.1.1",
     "ev3-js-motor": "^0.3.0"
   }
 }
