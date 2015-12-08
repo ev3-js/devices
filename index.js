@@ -9,7 +9,7 @@ var motors = {
 
 function devices (port) {
   this.path = basePath + motors[port.toLowerCase()]
-  return new Motor(this.path)
+  return Motor(this.path)
 }
 
 console.log(devices('a'))
