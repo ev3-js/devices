@@ -3,7 +3,6 @@
  */
 
 var Motor = require('ev3-js-motor')
-var map = require('@micro-js/map-obj')
 var path = require('path')
 var fs = require('fs')
 
@@ -46,12 +45,28 @@ function createMotor (basename) {
  */
 
 function portToPath () {
-  fs.readdir('/sys/class/tacho-motor', function (err, files) {
-    if (err) console.warn(err)
-    return files.reduce(function (obj, file) {
-      var portName = fs.readFileSync('/sys/class/tacho-motor/' + file + '/port_name', 'utf-8')
-      obj[portName] = file
-      return obj
-    }, {})
+  var motorPath = '/sys/class/tacho-motor'
+  return fs.readdir(motorPath).reduce(function (obj, file) {
+    var portName = fs.readFileSync(motorPath + file + '/port_name', 'utf-8')
+    obj[portName] = file
+    return obj
+  }, {})
+}
+
+
+/**
+ * map from micro-js/map
+ * @param  {Function} fn
+ * @param  {Object} obj
+ * @return {Object}
+ */
+function map (fn, obj) {
+  var result = {}
+  var self = this
+
+  obj.forEach(function (val, key) {
+    result[key] = fn.call(self, val, key)
   })
+
+  return result
 }
