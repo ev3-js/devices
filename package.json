@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ev3-js/devices#readme",
   "dependencies": {
-    "ev3-js-motor": "^0.1.0"
+    "ev3-js-motor": "^0.2.0"
   }
 }
