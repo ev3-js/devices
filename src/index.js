@@ -33,5 +33,5 @@ function portToPath (port) {
     obj[portName] = file.trim()
     return obj
   }, {})
-  return paths[port]
+  return motorPath + paths[port]
 }
