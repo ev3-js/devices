@@ -7,7 +7,7 @@ Collection of EV3 devices.
 
 ## Installation
 
-    $ npm install ev3-js-motor
+    $ npm install ev3-js-devices
 
 ## Usage
 

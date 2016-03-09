@@ -2,7 +2,7 @@
   "name": "ev3-js-devices",
   "repository": "git://github.com/ev3-js/devices.git",
   "description": "Collection EV3 devices.",
-  "version": "0.4.14",
+  "version": "0.5.9",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
