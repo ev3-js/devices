@@ -8,6 +8,8 @@
   "scripts": {
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@f/defaults": "^1.0.1"
+  },
   "devDependencies": {}
 }
